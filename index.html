@@ -4,49 +4,101 @@
     <meta charset="UTF-8">
     <title>DCS – Daniels Construction Service | Soltau</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Daniels Construction Service – Baggerarbeiten, Abrissarbeiten, Pflasterarbeiten & Gartenarbeiten in Soltau und Umgebung.">
+    <meta name="description" content="Daniels Construction Service – Bagger-, Abriss-, Pflaster- und Gartenarbeiten in Soltau und Umgebung.">
     <style>
+        /* Grundlayout */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #f4f4f4;
+            background-color: #f0e3d2; /* Sand-/Beige-Farbe passend zu Logo */
             color: #333;
         }
+
+        /* Header */
         header {
-            background: #1f6fa3;
+            background-color: #d4b996; /* dunkleres Sandton für Header */
+            background-image: url('https://raw.githubusercontent.com/dcs-soltau/dcs-soltau.github.io/main/1000026294.jpg');
+            background-size: cover;
+            background-position: center;
             color: white;
-            padding: 40px 20px;
             text-align: center;
+            padding: 80px 20px;
         }
+        header img {
+            max-width: 180px; /* Logo-Größe */
+            margin-bottom: 20px;
+        }
+        header h1 {
+            margin: 10px 0 5px 0;
+            font-size: 2.2em;
+        }
+        header p {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        /* Sektionen */
         section {
             padding: 40px 20px;
             max-width: 1000px;
-            margin: auto;
-            background: white;
-            margin-bottom: 20px;
+            margin: 20px auto;
+            background-color: #f8f1e7; /* helleres Beige für Inhalt */
+            border-radius: 8px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
         }
+
         h2 {
-            color: #1f6fa3;
+            color: #a56e3a; /* dunkles Braun für Überschriften */
+            margin-top: 0;
         }
+
+        h3 {
+            color: #7b4f2b;
+        }
+
         ul {
             line-height: 1.8;
+            padding-left: 20px;
         }
+
         footer {
-            background: #222;
+            background-color: #d4b996;
             color: white;
             text-align: center;
             padding: 20px;
             font-size: 14px;
         }
+
         .kontakt {
             font-size: 18px;
             line-height: 1.8;
+        }
+
+        /* Bilder in Inhalt */
+        .content-img {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 6px;
+        }
+
+        /* Responsive Texte */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            header p {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
 <body>
 
 <header>
+    <!-- Logo einfügen -->
+    <img src="https://raw.githubusercontent.com/dcs-soltau/dcs-soltau.github.io/main/logo.png" alt="DCS Logo">
     <h1>DCS – Daniels Construction Service</h1>
     <p>Zuverlässige Erd-, Abriss- & Gartenarbeiten in Soltau und Umgebung</p>
 </header>
@@ -54,9 +106,8 @@
 <section>
     <h2>Über mich</h2>
     <p>
-        Ich bin <strong>Daniel-Felix Scherwitz</strong>, Gründer von Daniels Construction Service.
-        Ich unterstütze Hausbesitzer, Grundstückseigentümer und Firmen mit ehrlicher,
-        sauberer und zuverlässiger Arbeit.
+        Ich bin <strong>Daniel-Felix Scherwitz</strong>, Gründer von Daniels Construction Service.  
+        Als erfahrener Allround-Handwerker und Maschinist unterstütze ich Hausbesitzer, Grundstückseigentümer und Firmen mit ehrlicher, sauberer und zuverlässiger Arbeit.
     </p>
 </section>
 
@@ -64,6 +115,7 @@
     <h2>Leistungen</h2>
 
     <h3>Bagger- & Erdarbeiten</h3>
+    <img class="content-img" src="https://raw.githubusercontent.com/dcs-soltau/dcs-soltau.github.io/main/bagger.jpg" alt="Baggerarbeiten">
     <ul>
         <li>Aushub & Ausschachtungen</li>
         <li>Fundamente</li>
@@ -71,6 +123,7 @@
     </ul>
 
     <h3>Abrissarbeiten</h3>
+    <img class="content-img" src="https://raw.githubusercontent.com/dcs-soltau/dcs-soltau.github.io/main/abriss.jpg" alt="Abrissarbeiten">
     <ul>
         <li>Hausabbruch</li>
         <li>Schuppen, Gartenhäuser & Carports</li>
@@ -79,6 +132,7 @@
     </ul>
 
     <h3>Pflasterarbeiten</h3>
+    <img class="content-img" src="https://raw.githubusercontent.com/dcs-soltau/dcs-soltau.github.io/main/pflaster.jpg" alt="Pflasterarbeiten">
     <ul>
         <li>Terrassen</li>
         <li>Gehwege</li>
@@ -86,36 +140,6 @@
     </ul>
 
     <h3>Gartenarbeiten</h3>
+    <img class="content-img" src="https://raw.githubusercontent.com/dcs-soltau/dcs-soltau.github.io/main/garten.jpg" alt="Gartenarbeiten">
     <ul>
         <li>Rasenmähen</li>
-        <li>Heckenschneiden</li>
-        <li>Baumfällung</li>
-    </ul>
-
-    <p><strong>Feuerholz:</strong> 1 m³ = 70 €</p>
-</section>
-
-<section>
-    <h2>Preise</h2>
-    <p>
-        Abrechnung stundenbasiert oder zu Festpreisen.<br>
-        <strong>Stundensatz: 25 – 35 €</strong>
-    </p>
-</section>
-
-<section>
-    <h2>Kontakt</h2>
-    <div class="kontakt">
-        <p><strong>Daniel-Felix Scherwitz</strong></p>
-        <p>Celler Straße 32a<br>29614 Soltau</p>
-        <p>📞 01525 8714981<br>
-        ✉️ danconservic@gmail.com</p>
-    </div>
-</section>
-
-<footer>
-    © 2026 Daniels Construction Service – Soltau
-</footer>
-
-</body>
-</html>
