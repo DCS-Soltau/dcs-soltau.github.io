@@ -10,31 +10,37 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f0e3d2; /* Sand-/Beige-Farbe passend zu Logo */
+            background: linear-gradient(to bottom, #1f6fa3 0%, #f0e3d2 50%, #f0e3d2 100%); /* Blau oben, Sand unten */
             color: #333;
         }
 
         /* Header */
         header {
-            background-color: #d4b996; /* dunkleres Sandton für Header */
-            background-image: url('https://raw.githubusercontent.com/dcs-soltau/dcs-soltau.github.io/main/1000026294.jpg');
-            background-size: cover;
-            background-position: center;
+            background-color: #1f6fa3; /* Blau */
             color: white;
             text-align: center;
-            padding: 80px 20px;
+            padding: 60px 20px 40px 20px;
+            position: relative;
         }
-        header img {
-            max-width: 180px; /* Logo-Größe */
-            margin-bottom: 20px;
-        }
+
         header h1 {
-            margin: 10px 0 5px 0;
+            margin: 0 0 10px 0;
             font-size: 2.2em;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
         }
+
         header p {
             margin: 0;
             font-size: 1.2em;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        /* Optionales Banner-Bild unter Header */
+        .banner {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            display: block;
         }
 
         /* Sektionen */
@@ -42,13 +48,13 @@
             padding: 40px 20px;
             max-width: 1000px;
             margin: 20px auto;
-            background-color: #f8f1e7; /* helleres Beige für Inhalt */
+            background-color: #f8f1e7; /* helles Sand */
             border-radius: 8px;
             box-shadow: 0 3px 8px rgba(0,0,0,0.1);
         }
 
         h2 {
-            color: #a56e3a; /* dunkles Braun für Überschriften */
+            color: #a56e3a; /* dunkles Braun */
             margin-top: 0;
         }
 
@@ -62,7 +68,7 @@
         }
 
         footer {
-            background-color: #d4b996;
+            background-color: #1f6fa3; /* Blau wie Header */
             color: white;
             text-align: center;
             padding: 20px;
@@ -74,16 +80,6 @@
             line-height: 1.8;
         }
 
-        /* Bilder in Inhalt */
-        .content-img {
-            width: 100%;
-            max-width: 600px;
-            display: block;
-            margin: 20px auto;
-            border-radius: 6px;
-        }
-
-        /* Responsive Texte */
         @media (max-width: 600px) {
             header h1 {
                 font-size: 1.8em;
@@ -97,11 +93,12 @@
 <body>
 
 <header>
-    <!-- Logo einfügen -->
-    <img src="https://raw.githubusercontent.com/dcs-soltau/dcs-soltau.github.io/main/logo.png" alt="DCS Logo">
     <h1>DCS – Daniels Construction Service</h1>
     <p>Zuverlässige Erd-, Abriss- & Gartenarbeiten in Soltau und Umgebung</p>
 </header>
+
+<!-- Optionales Banner -->
+<img class="banner" src="https://raw.githubusercontent.com/dcs-soltau/dcs-soltau.github.io/main/1000026294.jpg" alt="Banner-Bild">
 
 <section>
     <h2>Über mich</h2>
@@ -115,7 +112,6 @@
     <h2>Leistungen</h2>
 
     <h3>Bagger- & Erdarbeiten</h3>
-    <img class="content-img" src="https://raw.githubusercontent.com/dcs-soltau/dcs-soltau.github.io/main/bagger.jpg" alt="Baggerarbeiten">
     <ul>
         <li>Aushub & Ausschachtungen</li>
         <li>Fundamente</li>
@@ -123,7 +119,6 @@
     </ul>
 
     <h3>Abrissarbeiten</h3>
-    <img class="content-img" src="https://raw.githubusercontent.com/dcs-soltau/dcs-soltau.github.io/main/abriss.jpg" alt="Abrissarbeiten">
     <ul>
         <li>Hausabbruch</li>
         <li>Schuppen, Gartenhäuser & Carports</li>
@@ -132,7 +127,6 @@
     </ul>
 
     <h3>Pflasterarbeiten</h3>
-    <img class="content-img" src="https://raw.githubusercontent.com/dcs-soltau/dcs-soltau.github.io/main/pflaster.jpg" alt="Pflasterarbeiten">
     <ul>
         <li>Terrassen</li>
         <li>Gehwege</li>
@@ -140,6 +134,36 @@
     </ul>
 
     <h3>Gartenarbeiten</h3>
-    <img class="content-img" src="https://raw.githubusercontent.com/dcs-soltau/dcs-soltau.github.io/main/garten.jpg" alt="Gartenarbeiten">
     <ul>
         <li>Rasenmähen</li>
+        <li>Heckenschneiden</li>
+        <li>Baumfällung</li>
+    </ul>
+
+    <p><strong>Feuerholz:</strong> 1 m³ = 70 €</p>
+</section>
+
+<section>
+    <h2>Preise</h2>
+    <p>
+        Abrechnung stundenbasiert oder zu Festpreisen.<br>
+        <strong>Stundensatz: 25 – 35 €</strong>
+    </p>
+</section>
+
+<section>
+    <h2>Kontakt</h2>
+    <div class="kontakt">
+        <p><strong>Daniel-Felix Scherwitz</strong></p>
+        <p>Celler Straße 32a<br>29614 Soltau</p>
+        <p>📞 01525 8714981<br>
+        ✉️ danconservic@gmail.com</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Daniels Construction Service – Soltau
+</footer>
+
+</body>
+</html>
