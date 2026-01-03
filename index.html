@@ -1,94 +1,105 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>DCS – Daniels Construction Service | Soltau</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Daniels Construction Service – Bagger-, Abriss-, Pflaster- und Gartenarbeiten in Soltau und Umgebung.">
-    <style>
-        /* Grundlayout */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom, #1f6fa3 0%, #f0e3d2 50%, #f0e3d2 100%); /* Blau oben, Sand unten */
-            color: #333;
-        }
+<meta charset="UTF-8">
+<title>DCS – Daniels Construction Service | Soltau</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Daniels Construction Service – Bagger-, Abriss-, Pflaster- und Gartenarbeiten in Soltau und Umgebung.">
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f0e3d2;
+        color: #333;
+    }
 
-        /* Header */
-        header {
-            background-color: #1f6fa3; /* Blau */
-            color: white;
-            text-align: center;
-            padding: 60px 20px 40px 20px;
-            position: relative;
-        }
+    /* Header mit Logo/Banner */
+    header {
+        height: 300px;
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: linear-gradient(to bottom, rgba(31,111,163,0.6) 0%, rgba(240,227,210,0.6) 100%), 
+                    url('https://raw.githubusercontent.com/dcs-soltau/dcs-soltau.github.io/main/1000026294.jpg') no-repeat center;
+        background-size: cover;
+        position: relative;
+    }
 
-        header h1 {
-            margin: 0 0 10px 0;
-            font-size: 2.2em;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-        }
+    header h1 {
+        margin: 0;
+        font-size: 2.4em;
+        text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    }
 
-        header p {
-            margin: 0;
-            font-size: 1.2em;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-        }
+    header p {
+        margin: 10px 0 0 0;
+        font-size: 1.3em;
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    }
 
-        /* Optionales Banner-Bild unter Header */
-        .banner {
-            width: 100%;
-            max-height: 200px;
-            object-fit: cover;
-            display: block;
-        }
+    section {
+        padding: 40px 20px;
+        max-width: 1000px;
+        margin: 20px auto;
+        background-color: #f8f1e7;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
 
-        /* Sektionen */
-        section {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: 20px auto;
-            background-color: #f8f1e7; /* helles Sand */
-            border-radius: 8px;
-            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-        }
+    h2 {
+        color: #a56e3a;
+        margin-top: 0;
+        font-size: 1.8em;
+    }
 
-        h2 {
-            color: #a56e3a; /* dunkles Braun */
-            margin-top: 0;
-        }
+    h3 {
+        color: #7b4f2b;
+    }
 
-        h3 {
-            color: #7b4f2b;
-        }
+    ul {
+        line-height: 1.8;
+        padding-left: 20px;
+    }
 
-        ul {
-            line-height: 1.8;
-            padding-left: 20px;
-        }
+    footer {
+        background-color: #1f6fa3;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+    }
 
-        footer {
-            background-color: #1f6fa3; /* Blau wie Header */
-            color: white;
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-        }
+    .kontakt {
+        font-size: 18px;
+        line-height: 1.8;
+    }
 
-        .kontakt {
-            font-size: 18px;
-            line-height: 1.8;
-        }
+    /* Responsive Anpassungen */
+    @media (max-width: 900px) {
+        header { height: 250px; }
+        header h1 { font-size: 2em; }
+        header p { font-size: 1.1em; }
+    }
 
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 1.8em;
-            }
-            header p {
-                font-size: 1em;
-            }
-        }
-    </style>
+    @media (max-width: 600px) {
+        header { height: 200px; }
+        header h1 { font-size: 1.6em; }
+        header p { font-size: 1em; }
+        section { padding: 30px 15px; }
+        h2 { font-size: 1.5em; }
+    }
+
+    /* Links für Impressum/Datenschutz */
+    a {
+        color: #1f6fa3;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
 </head>
 <body>
 
@@ -96,9 +107,6 @@
     <h1>DCS – Daniels Construction Service</h1>
     <p>Zuverlässige Erd-, Abriss- & Gartenarbeiten in Soltau und Umgebung</p>
 </header>
-
-<!-- Optionales Banner -->
-<img class="banner" src="https://raw.githubusercontent.com/dcs-soltau/dcs-soltau.github.io/main/1000026294.jpg" alt="Banner-Bild">
 
 <section>
     <h2>Über mich</h2>
@@ -159,6 +167,28 @@
         <p>📞 01525 8714981<br>
         ✉️ danconservic@gmail.com</p>
     </div>
+</section>
+
+<section>
+    <h2>Impressum</h2>
+    <p>
+        Daniel-Felix Scherwitz<br>
+        DCS – Daniels Construction Service<br>
+        Celler Straße 32a, 29614 Soltau<br>
+        Telefon: 01525 8714981<br>
+        E-Mail: <a href="mailto:danconservic@gmail.com">danconservic@gmail.com</a><br>
+        Einzelunternehmen, keine Umsatzsteuerpflicht (Kleinunternehmer)
+    </p>
+</section>
+
+<section>
+    <h2>Datenschutzerklärung</h2>
+    <p>
+        Verantwortliche Stelle: Daniel-Felix Scherwitz<br>
+        Erhebung und Verarbeitung personenbezogener Daten erfolgt nur zur Bearbeitung von Anfragen und Aufträgen.<br>
+        Keine Weitergabe an Dritte. Sie können jederzeit Auskunft über gespeicherte Daten verlangen.<br>
+        Kontakt: <a href="mailto:danconservic@gmail.com">danconservic@gmail.com</a>
+    </p>
 </section>
 
 <footer>
